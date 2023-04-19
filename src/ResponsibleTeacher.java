@@ -43,7 +43,7 @@ public class ResponsibleTeacher extends Employee implements Teacher  {
 
     public String toString(){
         return "Teacher id: " + getIdString() + "\n\t" + "First name: " + getFirstName() + ", " + "Last name: " + getLastName() + "\n\t"
-        + "Birthdate: " + getBirthDate() + "\n\t" + "Salary: " + getPayment().calculatePayment() +  "\n\t" + "Teacher for courses: \n" + getCourses();
+        + "Birthdate: " + getBirthDate() + "\n\t" + String.format ("Salary: %.2f", getPayment().calculatePayment()) +  "\n\t" + "Teacher for courses: \n" + getCourses();
          }
 }
 
