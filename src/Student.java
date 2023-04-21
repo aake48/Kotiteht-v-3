@@ -143,9 +143,9 @@ public class Student extends Person{
         }
     }
 
-    public boolean canGraduate(){
-        if(degrees.get(0).getDegreeTitle() != ConstantValues.NO_TITLE && degrees.get(0).getCreditsByType(1) >= ConstantValues.BACHELOR_MANDATORY && degrees.get(0).getCredits() >= ConstantValues.BACHELOR_CREDITS
-        && degrees.get(1).getDegreeTitle() != ConstantValues.NO_TITLE && degrees.get(1).getCreditsByType(1) >= ConstantValues.MASTER_MANDATORY && degrees.get(1).getCredits() >= ConstantValues.MASTER_CREDITS){
+    private boolean canGraduate(){
+        if(degrees.get(0).getTitleOfThesis() != ConstantValues.NO_TITLE && degrees.get(0).getCreditsByType(1) >= ConstantValues.BACHELOR_MANDATORY && degrees.get(0).getCredits() >= ConstantValues.BACHELOR_CREDITS
+        && degrees.get(1).getTitleOfThesis() != ConstantValues.NO_TITLE && degrees.get(1).getCreditsByType(1) >= ConstantValues.MASTER_MANDATORY && degrees.get(1).getCredits() >= ConstantValues.MASTER_CREDITS){
             return true;
         }else{
             return false;
