@@ -204,8 +204,3 @@ public class Degree {
     }
 
 }
-//Kysy tuosta averagen laskemisesta, to string viel kuntoo studentin jälkeen " (courses: " + getGPA(0).get(1) + ")"
-
-//String.format(" (courses: %.0f)", getGPA(1).get(1) + getGPA(0).get(0))
-
-//KATO SE getGPA UUDESTAAN 0 = OPTIONAL, 1 = MANDATORY, 2 = ALL UNOHTU TOI KOKONAA
